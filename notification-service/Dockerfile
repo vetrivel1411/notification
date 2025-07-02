@@ -10,5 +10,5 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 COPY . /app
 RUN mvn clean package
-EXPOSE 3001
+EXPOSE 3003
 CMD ["java", "-jar", "target/notification-service.jar"]
